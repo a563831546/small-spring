@@ -7,13 +7,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
- * 公众号：bugstack虫洞栈
- * Create by 小傅哥(fustack)
+ * baogex.com
+ * extend:
+ * --{AbstractAutowireCapableBeanFactory} :具备单例实例注册容器能力、具备获取Bean实例的能力
+ * implement:
+ * --{BeanDefinitionRegistry} :具备获取Bean实例的能力
  */
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
 
-    private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
+    private final Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) {
