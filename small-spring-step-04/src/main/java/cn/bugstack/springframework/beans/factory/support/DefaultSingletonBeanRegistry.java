@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * baogex.com
  */
-public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
+public class    DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 
     private Map<String, Object> singletonObjects = new HashMap<>();
 
