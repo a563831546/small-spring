@@ -6,6 +6,7 @@ import cn.bugstack.springframework.beans.factory.support.DefaultListableBeanFact
 import cn.bugstack.springframework.test.bean.UserService;
 import org.junit.Test;
 
+
 /**
  * baogex.com
  */
